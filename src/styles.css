@@ -1,0 +1,95 @@
+.App {
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.container {
+  margin-top: 10vh;
+  min-width: 70vw;
+  max-height: 80vh;
+  background-color: rgba(255, 255, 255, 0.73);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+h1 {
+  font-family: "Rubik Mono One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: rgb(126, 218, 223);
+  text-align: center;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(126, 218, 223);
+  text-align: margin-left;
+}
+.taskInput {
+  display: flex;
+
+  justify-content: center;
+  margin: 5%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  height: 25px;
+}
+.taskInput > input {
+  width: 80%;
+  border-radius: 5px 0 0 5px;
+  padding-left: 5px;
+}
+.taskInput > button {
+  width: 20%;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: rgb(126, 218, 223);
+}
+
+.taskInput > input {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+li > button {
+  border-radius: 100%;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(247, 108, 108);
+  margin: 2px;
+  /* width:
+  height: */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.allTasks {
+  margin: 5%;
+}
