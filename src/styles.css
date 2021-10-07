@@ -19,11 +19,13 @@ body {
 
 .container {
   margin-top: 10vh;
-  min-width: 70vw;
+  width: 500px;
+  max-width: 70vw;
   max-height: 80vh;
   background-color: rgba(255, 255, 255, 0.73);
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  padding: 5%;
 }
 h1 {
   font-family: "Rubik Mono One", sans-serif;
@@ -41,9 +43,7 @@ h2 {
 }
 .taskInput {
   display: flex;
-
   justify-content: center;
-  margin: 5%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
   height: 25px;
 }
@@ -52,6 +52,7 @@ h2 {
   border-radius: 5px 0 0 5px;
   padding-left: 5px;
 }
+
 .taskInput > button {
   width: 20%;
   border: none;
@@ -65,6 +66,9 @@ h2 {
 .taskInput > input {
   border: none;
   font-family: "Montserrat", sans-serif;
+}
+.taskInput.invalidInput > input {
+  background-color: rgb(221, 192, 173);
 }
 li {
   width: 100%;
@@ -90,6 +94,9 @@ ul {
   flex-direction: column;
   justify-content: center;
 }
-.allTasks {
-  margin: 5%;
+
+.warnings {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgb(34, 193, 195);
 }
